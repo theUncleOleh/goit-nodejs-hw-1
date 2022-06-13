@@ -1,6 +1,7 @@
 const contactsOperations = require("./contacts");
-// // const { listContacts } = require("./contacts");
+
 const argv = require("yargs").argv;
+/* commander
 // const { Command } = require("commander");
 // const program = new Command();
 // program
@@ -13,7 +14,7 @@ const argv = require("yargs").argv;
 // program.parse(process.argv);
 
 // const argv = program.opts();
-
+*/
 async function invokeAction({ action, id, name, email, phone }) {
   switch (action) {
     case "list":
@@ -49,5 +50,4 @@ async function invokeAction({ action, id, name, email, phone }) {
 }
 
 invokeAction(argv);
-// const id = "7";
-// invokeAction({ action: "get", id });
+
